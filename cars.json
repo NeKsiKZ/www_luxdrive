@@ -1,0 +1,148 @@
+{
+  "samochody": [
+    {
+      "id": 1,
+      "marka": "Lamborghini",
+      "model": "Huracán",
+      "cena": 2000,
+      "moc": 610,
+      "silnik": "5.2 V10",
+      "naped": "AWD",
+      "obraz": "assets/img/lamborghini_huracan.jpg",
+      "opis": "Lamborghini Huracán to supersamochód o niesamowitych osiągach, łączący elegancję z brutalną mocą V10.",
+      "dostepnosc": true
+    },
+    {
+      "id": 2,
+      "marka": "Ferrari",
+      "model": "488 Spider",
+      "cena": 2500,
+      "moc": 670,
+      "silnik": "3.9 V8",
+      "naped": "RWD",
+      "obraz": "assets/img/ferrari.jpg",
+      "opis": "Ferrari 488 Spider oferuje oszałamiające przyspieszenie i luksusowe wykończenie. Idealne na wyjątkowe okazje.",
+      "dostepnosc": false
+    },
+    {
+      "id": 3,
+      "marka": "McLaren",
+      "model": "P1",
+      "cena": 8000,
+      "moc": 903,
+      "silnik": "3.8 V8 Twin-Turbo + Electric",
+      "naped": "RWD",
+      "obraz": "assets/img/mclaren.jpg",
+      "opis": "McLaren P1 to hybrydowy hipersamochód, który łączy elektryczny napęd z potężnym V8. Prawdziwe dzieło inżynierii.",
+      "dostepnosc": true
+    },
+    {
+      "id": 4,
+      "marka": "BMW",
+      "model": "m4 touring",
+      "cena": 700,
+      "moc": 480,
+      "silnik": "3.0 R6",
+      "naped": "RWD",
+      "obraz": "assets/img/bmw.jpg",
+      "opis": "BMW M4 Touring to sportowy kombi, który oferuje moc, przestrzeń i komfort w jednym eleganckim pakiecie.",
+      "dostepnosc": true
+    },
+    {
+      "id": 5,
+      "marka": "Audi",
+      "model": "R8",
+      "cena": 1500,
+      "moc": 610,
+      "silnik": "5.2 V10",
+      "naped": "AWD",
+      "obraz": "assets/img/audi.jpg",
+      "opis": "Audi R8 z napędem AWD i silnikiem V10 to połączenie stylu, mocy i zaawansowanej technologii.",
+      "dostepnosc": true
+    },
+    {
+      "id": 6,
+      "marka": "Mercedes",
+      "model": "S63",
+      "cena": 1300,
+      "moc": 603,
+      "silnik": "4.0 V8",
+      "naped": "AWD",
+      "obraz": "assets/img/mercedes.jpg",
+      "opis": "Mercedes S63 to luksusowa limuzyna z potężnym V8 i komfortowym wnętrzem klasy premium.",
+      "dostepnosc": false
+    },
+    {
+      "id": 7,
+      "marka": "Bugatti",
+      "model": "Chiron",
+      "cena": 12000,
+      "moc": 1500,
+      "silnik": "8.0 W16 Quad-Turbo",
+      "naped": "AWD",
+      "obraz": "assets/img/bugatti.jpg",
+      "opis": "Super hiper sportowy, ekstremalna prędkość i luksus.",
+      "dostepnosc": true
+    },
+    {
+      "id": 8,
+      "marka": "Ferrari",
+      "model": "SF90 Stradale",
+      "cena": 5000,
+      "moc": 1000,
+      "silnik": "4.0 V8 Twin-Turbo + Electric",
+      "naped": "AWD",
+      "obraz": "assets/img/ferrari_sf90.jpg",
+      "opis": "Hybrydowa bestia z ogromnym przyspieszeniem.",
+      "dostepnosc": true
+    },
+    {
+      "id": 9,
+      "marka": "Lamborghini",
+      "model": "Aventador SVJ",
+      "cena": 4500,
+      "moc": 770,
+      "silnik": "6.5 V12",
+      "naped": "AWD",
+      "obraz": "assets/img/lamborghini_svj.jpg",
+      "opis": "Kultowy agresywny design i potężny silnik V12.",
+      "dostepnosc": true
+    },
+    {
+      "id": 10,
+      "marka": "McLaren",
+      "model": "720S",
+      "cena": 3500,
+      "moc": 720,
+      "silnik": "4.0 V8 Twin-Turbo",
+      "naped": "RWD",
+      "obraz": "assets/img/mclaren_720s.jpg",
+      "opis": "Lekki, szybki i bardzo precyzyjny w prowadzeniu.",
+      "dostepnosc": true
+    },
+    {
+      "id": 11,
+      "marka": "Porsche",
+      "model": "911 Turbo S (992)",
+      "cena": 2000,
+      "moc": 650,
+      "silnik": "3.8 Flat-6 Twin-Turbo",
+      "naped": "AWD",
+      "obraz": "assets/img/porsche_gt3.jpg",
+      "opis": "Klasyka sportowych aut, świetne osiągi i codzienna użyteczność.",
+      "dostepnosc": true
+    },
+    {
+      "id": 12,
+      "marka": "Aston Martin",
+      "model": "DBS Superleggera",
+      "cena": 3000,
+      "moc": 725,
+      "silnik": "5.2 V12 Twin-Turbo",
+      "naped": "RWD",
+      "obraz": "assets/img/astonmartin_dbs.jpg",
+      "opis": "Luksus i moc w jednym, brytyjska elegancja z pazurem.",
+      "dostepnosc": false
+    }
+  ]
+}

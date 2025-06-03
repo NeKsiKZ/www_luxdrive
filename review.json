@@ -1,0 +1,42 @@
+[
+  {
+    "name": "Anna Nowak",
+    "review": "Wynajem Ferrari to było coś wyjątkowego! Auto w świetnym stanie, a obsługa bardzo pomocna i uprzejma.",
+    "rating": 5
+  },
+  {
+    "name": "Michał Kowalski",
+    "review": "Samochód spełnił moje oczekiwania, choć miałem drobne problemy z nawigacją. Obsługa jednak szybko pomogła.",
+    "rating": 4
+  },
+  {
+    "name": "Karolina Wiśniewska",
+    "review": "Lamborghini robi wrażenie! Doskonały samochód na weekendowy wypad. Na pewno skorzystam ponownie.",
+    "rating": 5
+  },
+  {
+    "name": "Tomasz Zieliński",
+    "review": "Ceny trochę wyższe niż gdzie indziej, ale jakość auta i obsługi rekompensuje wszystko. Polecam.",
+    "rating": 4
+  },
+  {
+    "name": "Ewelina Maj",
+    "review": "Auto podstawione na czas, kontakt szybki i bezproblemowy. Bardzo udane doświadczenie, na pewno wrócę.",
+    "rating": 5
+  },
+  {
+    "name": "Paweł Nowicki",
+    "review": "Samochód świetny, ale zabrakło mi trochę elastyczności w godzinach zwrotu. Ogólnie polecam firmę.",
+    "rating": 3
+  },
+  {
+    "name": "Magdalena Kaczmarek",
+    "review": "Bardzo dobrze zorganizowany wynajem, samochód czysty i zadbany. Warto było zapłacić trochę więcej.",
+    "rating": 5
+  },
+  {
+    "name": "Łukasz Wiśniewski",
+    "review": "Dobra oferta, ale lokalizacja wypożyczalni trochę utrudniała odbiór. Samochód bez zarzutu.",
+    "rating": 4
+  }
+]

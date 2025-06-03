@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LUXDRIVE - Luksusowe Samochody</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>LUXDRIVE</h1>
+    <nav>
+      <ul>
+        <li><a href="#fleet">Flota</a></li>
+        <li><a href="#formularz">Kontakt</a></li>
+        <li><button id="themeToggle">🌗</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Wypożycz luksusowe auto swoich marzeń</h2>
+    <p>Najlepsze marki, elastyczne warunki, prestiż bez kompromisów.</p>
+    <div class="hero-buttons">
+      <button class="cta">Sprawdź dostępność</button>
+      <button class="secondary">Zobacz promocje</button>
+    </div>
+  </section>
+
+  <dialog id="promoModal"></dialog>
+
+  <dialog id="availabilityModal">
+    <h2>Dostępność samochodów</h2>
+    <ul id="availabilityList">
+      <!-- JS wypełni dostępność -->
+    </ul>
+    <button id="closeAvailability">Zamknij</button>
+  </dialog>
+
+  <section class="filters">
+    <input type="text" id="search" placeholder="Szukaj po nazwie/modelu" />
+    <select id="brandFilter">
+      <option value="">Wszystkie marki</option>
+      <option value="Audi">Audi</option>
+      <option value="BMW">BMW</option>
+      <option value="Mercedes">Mercedes</option>
+      <option value="Lamborghini">Lamborghini</option>
+      <option value="Ferrari">Ferrari</option>
+      <option value="McLaren">McLaren</option>
+      <option value="Bugatti">Bugatti</option>
+      <option value="Porsche">Porsche</option>
+      <option value="Aston Martin">Aston Martin</option>
+    </select>
+    <select id="sortSelect">
+      <option value="price-asc">Cena rosnąco</option>
+      <option value="price-desc">Cena malejąco</option>
+      <option value="name">Nazwa A-Z</option>
+      <option value="year">Rok produkcji</option>
+    </select>
+  </section>
+
+
+  <main id="fleet" class="fleet-container">
+    <!-- Samochody będą dodawane dynamicznie tutaj -->
+  </main>
+
+  <dialog id="carModal"></dialog>
+
+  <section class="testimonials">
+    <h2>Opinie naszych klientów</h2>
+    <div class="testimonial-carousel">
+      <!-- Karuzela będzie wypełniana JS -->
+    </div>
+  </section>
+
+  <section id="formularz" class="contact">
+    <h2>Formularz kontaktowy</h2>
+    <form id="contactForm">
+      <label>Imię
+        <input type="text" name="name" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" required>
+      </label>
+      <label>Wiadomość
+        <textarea name="message" required></textarea>
+      </label>
+      <button type="submit">Wyślij</button>
+      <div id="formMessage"></div>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 LUXDRIVE. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
