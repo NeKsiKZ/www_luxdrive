@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const promoModal = document.getElementById("promoModal");
   const promoBtn = document.querySelector(".secondary");
 
-  
+
   promoBtn.addEventListener("click", () => {
     promoModal.innerHTML = `
     <h2>Aktualne Promocje</h2>
@@ -62,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <li>Moc: ${car.moc || "brak danych"} KM</li>
             <li>Silnik: ${car.silnik || "brak danych"}</li>
             <li>Napęd: ${car.naped || "brak danych"}</li>
+            <li>Rok: ${car.rok || "brak danych"}</li>
           </ul>
         </div>
         <div class="car-footer">
@@ -107,10 +108,17 @@ document.addEventListener("DOMContentLoaded", () => {
           `${a.marka} ${a.model}`.localeCompare(`${b.marka} ${b.model}`)
         );
         break;
+      case "year-asc":
+        filtered.sort((a, b) => a.rok - b.rok);
+        break;
+      case "year-desc":
+        filtered.sort((a, b) => b.rok - a.rok);
+        break;
     }
 
     displayCars(filtered);
   }
+
 
   searchInput.addEventListener("input", updateDisplay);
   brandFilter.addEventListener("change", updateDisplay);
@@ -139,6 +147,56 @@ document.addEventListener("DOMContentLoaded", () => {
       carModal.close();
     }
   });
+
+const reservationModal = document.getElementById("reservationModal");
+const reservationForm = document.getElementById("reservationForm");
+const reservationMessage = document.getElementById("reservationMessage");
+const resCancel = document.getElementById("resCancel");
+
+let selectedCarId = null;
+
+// Obsługa kliknięcia w "Rezerwuj"
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("rent-btn")) {
+    const carId = e.target.closest(".car-tile").querySelector(".details-btn").dataset.id;
+    const car = cars.find((c) => c.id == carId);
+
+    if (!car.dostepnosc) {
+      alert("Ten samochód jest obecnie niedostępny.");
+      return;
+    }
+
+    selectedCarId = car.id;
+    reservationForm.reset();
+    reservationMessage.textContent = "";
+    reservationModal.showModal();
+  }
+});
+
+// Anuluj rezerwację
+resCancel.addEventListener("click", () => {
+  reservationModal.close();
+});
+
+// Obsługa wysyłania formularza rezerwacji
+reservationForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+
+  const name = document.getElementById("resName").value.trim();
+  const email = document.getElementById("resEmail").value.trim();
+  const phone = document.getElementById("resPhone").value.trim();
+
+  if (!name || !email || !phone) {
+    reservationMessage.textContent = "Wypełnij wymagane pola.";
+    return;
+  }
+
+  reservationMessage.textContent = "Rezerwacja została przyjęta! Dziękujemy.";
+  setTimeout(() => {
+    reservationModal.close();
+  }, 2000);
+});
+
 
 
   // Opinie klientów
@@ -183,7 +241,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const carousel = document.querySelector(".testimonial-carousel");
   if (carousel) {
     let scrollPos = carousel.scrollWidth - carousel.clientWidth;
-    const scrollSpeed = 0.4;
+    const scrollSpeed = 0.8;
     let isPaused = false;
 
     function scroll() {
@@ -244,7 +302,7 @@ document.addEventListener("DOMContentLoaded", () => {
     localStorage.setItem("theme", next);
   });
 
-    const availabilityModal = document.getElementById("availabilityModal");
+  const availabilityModal = document.getElementById("availabilityModal");
   const availabilityList = document.getElementById("availabilityList");
   const availabilityBtn = document.querySelector(".cta");
   const closeAvailabilityBtn = document.getElementById("closeAvailability");

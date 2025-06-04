@@ -178,8 +178,6 @@ nav button {
 }
 
 
-
-
 .fleet-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
@@ -314,6 +312,39 @@ nav button {
   transform: translateY(-2px);
 }
 
+dialog#reservationModal form {
+  max-width: 400px;
+  margin: 0px auto;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+dialog#reservationModal label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-weight: 600;
+  text-align: left;
+}
+
+dialog#reservationModal input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  box-sizing: border-box;
+  margin-top: 0.3rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+dialog#reservationModal menu {
+  padding: 0px;
+  ;
+}
+
 
 .testimonials {
   padding: 1rem 1rem;
@@ -340,9 +371,7 @@ nav button {
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   -ms-overflow-style: none;
-  /* IE i Edge */
   scrollbar-width: none;
-  /* Firefox */
   box-sizing: border-box;
   scroll-behavior: smooth;
 }

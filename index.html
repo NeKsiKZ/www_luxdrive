@@ -34,7 +34,7 @@
   <dialog id="availabilityModal">
     <h2>Dostępność samochodów</h2>
     <ul id="availabilityList">
-      <!-- JS wypełni dostępność -->
+      <!-- Dostępność -->
     </ul>
     <button id="closeAvailability">Zamknij</button>
   </dialog>
@@ -57,21 +57,51 @@
       <option value="price-asc">Cena rosnąco</option>
       <option value="price-desc">Cena malejąco</option>
       <option value="name">Nazwa A-Z</option>
-      <option value="year">Rok produkcji</option>
+      <option value="year-asc">Rok rosnąco</option>
+      <option value="year-desc">Rok malejąco</option>
     </select>
   </section>
 
-
   <main id="fleet" class="fleet-container">
-    <!-- Samochody będą dodawane dynamicznie tutaj -->
+    <!-- Samochody -->
   </main>
 
   <dialog id="carModal"></dialog>
 
+  <!-- Popup rezerwacji -->
+  <dialog id="reservationModal">
+    <form id="reservationForm" method="dialog">
+      <h2>Rezerwacja samochodu</h2>
+
+      <label>
+        Imię:
+        <input type="text" id="resName" required>
+      </label>
+
+      <label>
+        Email:
+        <input type="email" id="resEmail" required>
+      </label>
+
+      <label>
+        Telefon:
+        <input type="tel" id="resPhone" required>
+      </label>
+
+      <div id="reservationMessage" class="form-message"></div>
+
+      <menu>
+        <button type="submit">Wyślij</button>
+        <button type="button" id="resCancel">Anuluj</button>
+      </menu>
+    </form>
+  </dialog>
+
+
   <section class="testimonials">
     <h2>Opinie naszych klientów</h2>
     <div class="testimonial-carousel">
-      <!-- Karuzela będzie wypełniana JS -->
+      <!-- Karuzela -->
     </div>
   </section>
 
