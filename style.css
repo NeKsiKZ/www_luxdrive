@@ -520,7 +520,7 @@ form button {
 }
 
 form button:hover {
-  background: #948979;
+  background: var(--button_hover);
 }
 
 #formMessage {
